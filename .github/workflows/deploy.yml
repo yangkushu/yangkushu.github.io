@@ -28,8 +28,7 @@ jobs:
             - name: Deploy Web
               uses: peaceiris/actions-gh-pages@v3
               with:
-                  PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
-                  EXTERNAL_REPOSITORY: yangkushu/yangkushu.github.io
-                  PUBLISH_BRANCH: master
-                  PUBLISH_DIR: ./public
-                  commit_message: ${{ github.event.head_commit.message }}
+                  github_token: ${{ secrets.GITHUB_TOKEN }}  # 使用内置 token
+                  publish_branch: master
+                  publish_dir: ./public
+                  # commit_message: 可保留但非必需
