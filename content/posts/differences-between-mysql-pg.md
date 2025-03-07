@@ -1,6 +1,7 @@
 +++
 date = '2025-03-07T17:27:19+08:00'
-draft = true
+draft = false
+tags = ['MySQL', 'PostgreSQL']
 title = 'MySQL 对比 PostgreSQL 使用上的的区别'
 +++
 
