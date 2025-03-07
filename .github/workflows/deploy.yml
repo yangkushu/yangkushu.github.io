@@ -10,6 +10,9 @@ on:
 jobs:
     build:
         runs-on: ubuntu-latest
+        # 新增权限配置
+        permissions:
+            contents: write  # 授予仓库内容写入权限
         steps:
             - name: Checkout
               uses: actions/checkout@v2
@@ -29,6 +32,6 @@ jobs:
               uses: peaceiris/actions-gh-pages@v3
               with:
                   github_token: ${{ secrets.GITHUB_TOKEN }}
-                  publish_branch: gh-pages  # 修改部署分支为专用分支
+                  publish_branch: gh-pages
                   publish_dir: ./public
                   # commit_message: 可保留但非必需
