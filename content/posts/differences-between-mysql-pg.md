@@ -1,13 +1,8 @@
----
-title: "MySQL 对比 PostgreSQL 使用上的的区别"
-date: 2025-03-06
-categories:
-  - Mysql
-  - PostgreSQL
-tags:
-  - 数据库
-
----
++++
+date = '2025-03-07T17:27:19+08:00'
+draft = true
+title = 'MySQL 对比 PostgreSQL 使用上的的区别'
++++
 
 以前工作中用的都是 MySQL。最近做银行的项目要求使用 PostgreSQL，这里对比一下常用的功能里，两种数据库的区别。
 比较深入的实现原理部分这里就先不写了，后面会单独有文章来说。
@@ -59,4 +54,3 @@ Pgsql 新加的字段的顺序只能在最后面，不能调整。
 Pgsql 支持扩展，比如地理信息、时序数据、向量类型以及分词等。非常丰富。
 
 Mysql 的扩展非常少。
-
