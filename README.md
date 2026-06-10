@@ -26,6 +26,14 @@ draft = true
 
 保持 `draft = true` 时，文章是草稿，不会被正式构建发布。
 
+## 本地预览
+
+首次克隆仓库后，先初始化主题 submodule：
+
+```bash
+git submodule update --init --recursive
+```
+
 本地预览草稿：
 
 ```bash
@@ -38,6 +46,18 @@ hugo server -D
 hugo server
 ```
 
+启动后打开：
+
+```text
+http://localhost:1313/
+```
+
+如果页面显示 `Page Not Found`，并且终端中出现 `found no layout file` 相关警告，通常是 `themes/meme/` 主题 submodule 没有正确初始化。重新执行：
+
+```bash
+git submodule update --init --recursive
+```
+
 ## 发布
 
 推送到 `master` 后，GitHub Actions 会自动构建并发布到 GitHub Pages。
@@ -45,14 +65,6 @@ hugo server
 生产构建不会带 `-D` 参数，因此 `draft = true` 的文章不会发布到网站。
 
 注意：如果仓库是公开的，草稿文件即使不发布到网站，推送后仍可能在 GitHub 仓库源码中被看到。
-
-## 初始化主题
-
-首次克隆仓库后，需要初始化主题 submodule：
-
-```bash
-git submodule update --init --recursive
-```
 
 ## 参考
 
