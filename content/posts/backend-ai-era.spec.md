@@ -269,7 +269,8 @@ AI Coding 不是文章主线，但要作为一个明显的小节。
 基础配置：
 
 - API 地址：`https://openrouter.ai/api/v1/chat/completions`
-- 鉴权方式：通过环境变量 `OPENROUTER_API_KEY` 提供 API key，请求头使用 `Authorization: Bearer <OPENROUTER_API_KEY>`。
+- 鉴权方式：通过环境变量 `$OPENROUTER_API_KEY` 提供 API key；调用端只读取该环境变量，不在 spec、正文、评审记录或日志中记录 key 值。
+- 请求鉴权：请求头使用 `Authorization: Bearer $OPENROUTER_API_KEY`。
 - 请求格式：使用非流式请求，`messages` 中只包含一条 `system` 消息和一条 `user` 消息。
 - 生成参数：评审任务优先保持稳定输出，`temperature` 建议设置为 `0.2` 左右；输出长度按模型能力设置，避免因为截断导致评审不完整。
 - 模型列表：由调用端通过变量配置，每次评审至少选择 2 个风格不同的模型，终稿前可增加到 3 个。
@@ -367,7 +368,7 @@ content/posts/backend-ai-era.md
 - 某个模型调用失败时，可以重试一次；仍失败则记录失败模型和原因，继续使用其他模型结果。
 - 如果模型输出不符合反馈格式，可以要求同一模型基于原输出重新整理格式；不要让它重新评审文章。
 - 如果不同模型结论冲突，优先保留为分歧点，由主 agent 结合文章定位和通过标准判断，不直接按多数票修改。
-- 不把 API key、完整请求头、个人本机路径或包含凭据的信息写入项目文档。
+- 不把 API key 实际值、个人本机路径或包含凭据的信息写入项目文档。
 
 ### 共用检查项
 
