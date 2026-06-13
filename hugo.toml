@@ -1,8 +1,8 @@
 ##########################################
 # 站点配置
 
-baseURL = "https://example.com/"
-title = "Hugo 主题 MemE"
+baseURL = "https://yangkushu.github.io/"
+title = "杨苦书"
 languageCode = "zh-CN"
 hasCJKLanguage = true
 # 版权信息（支持 Markdown）
@@ -458,7 +458,7 @@ uglyURLs = false
     # 说明：分区的名字即站点的 content 目录下
     #      的文件夹的名字。
 
-    # mainSections = ["posts"]
+    mainSections = ["posts"]
 
 
     ######################################
@@ -593,12 +593,12 @@ uglyURLs = false
     # 说明：仅在生产环境（production）下渲染
 
     # 是否开启（全局设置）
-    enableComments = false
+    enableComments = true
     # 说明：文章的 Front Matter 中的 `comments`
     #      的优先级高于此处
 
     # 直接加载评论，不需要手动点击按钮加载
-    autoLoadComments = false
+    autoLoadComments = true
 
     ## Disqus
     enableDisqus = false
@@ -677,13 +677,13 @@ uglyURLs = false
     # 说明：https://github.com/gitalk/gitalk
 
     ## Giscus
-    enableGiscus = false
-    giscusRepo = "[ENTER repo/you/want HERE]"
-    giscusRepoId = "[ENTER REPO ID HERE]"
-    giscusCategory = "[ENTER CATEGORY NAME HERE]"
-    giscusCategoryId = "[ENTER CATEGORY ID HERE]"
+    enableGiscus = true
+    giscusRepo = "yangkushu/yangkushu.github.io"
+    giscusRepoId = "R_kgDOODlfzQ"
+    giscusCategory = "Comments"
+    giscusCategoryId = "DIC_kwDOODlfzc4C_EhN"
     giscusMapping = "pathname"
-    giscusStrict = false
+    giscusStrict = true
     giscusReactionsEnabled = true
     giscusEmitMetaData = false
     giscusInputPosition = "top"
@@ -837,7 +837,7 @@ uglyURLs = false
     readingTimeIcon = "clock"
 
     # 是否显示不蒜子页面浏览量
-    displayBusuanziPagePV = false
+    displayBusuanziPagePV = true
     # 不蒜子页面浏览量的图标
     busuanziPagePVIcon = "eye"
     # 说明：仅在生产环境（production）下渲染
