@@ -2,7 +2,7 @@
 # 站点配置
 
 baseURL = "https://yangkushu.github.io/"
-title = "杨苦书"
+title = "杨酷暑"
 languageCode = "zh-CN"
 hasCJKLanguage = true
 # 版权信息（支持 Markdown）
