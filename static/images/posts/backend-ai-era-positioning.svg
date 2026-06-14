@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-labelledby="title desc">
+  <title id="title">普通后端在 AI 时代的能力重新定位</title>
+  <desc id="desc">后端基本功、AI Coding 和大模型应用能力共同支撑 AI 应用落地。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7f4ee"/>
+      <stop offset="0.58" stop-color="#eef4f2"/>
+      <stop offset="1" stop-color="#f4f0e8"/>
+    </linearGradient>
+    <filter id="shadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#25343b" flood-opacity="0.14"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#62727a"/>
+    </marker>
+    <style>
+      .title { font: 700 34px -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; fill: #25343b; }
+      .subtitle { font: 400 21px -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; fill: #66757d; }
+      .card-title { font: 700 26px -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; fill: #233139; }
+      .card-note { font: 400 18px -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; fill: #66757d; }
+      .item { font: 500 19px -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; fill: #33434b; }
+      .center-title { font: 700 30px -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; fill: #ffffff; }
+      .center-note { font: 400 19px -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; fill: #d9e7e6; }
+    </style>
+  </defs>
+
+  <rect width="1000" height="600" fill="url(#bg)"/>
+  <circle cx="872" cy="98" r="76" fill="#e3ebea" opacity="0.65"/>
+  <circle cx="126" cy="516" r="94" fill="#eadfcf" opacity="0.52"/>
+
+  <text x="58" y="74" class="title">普通后端在 AI 时代的能力重新定位</text>
+  <text x="58" y="112" class="subtitle">在后端工程经验上补齐新的应用能力</text>
+
+  <rect x="58" y="178" width="270" height="240" rx="14" fill="#ffffff" filter="url(#shadow)"/>
+  <rect x="58" y="178" width="270" height="8" rx="4" fill="#4f7f86"/>
+  <text x="92" y="232" class="card-title">后端基本功</text>
+  <text x="92" y="266" class="card-note">仍然是岗位考察基础</text>
+  <circle cx="96" cy="312" r="4.5" fill="#4f7f86"/>
+  <text x="114" y="319" class="item">语言和框架</text>
+  <circle cx="96" cy="350" r="4.5" fill="#4f7f86"/>
+  <text x="114" y="357" class="item">数据库和中间件</text>
+  <circle cx="96" cy="388" r="4.5" fill="#4f7f86"/>
+  <text x="114" y="395" class="item">系统设计</text>
+
+  <rect x="365" y="178" width="270" height="240" rx="14" fill="#ffffff" filter="url(#shadow)"/>
+  <rect x="365" y="178" width="270" height="8" rx="4" fill="#c28a47"/>
+  <text x="399" y="232" class="card-title">AI Coding</text>
+  <text x="399" y="266" class="card-note">正在变成开发基础能力</text>
+  <circle cx="403" cy="312" r="4.5" fill="#c28a47"/>
+  <text x="421" y="319" class="item">规则和上下文</text>
+  <circle cx="403" cy="350" r="4.5" fill="#c28a47"/>
+  <text x="421" y="357" class="item">代码审查</text>
+  <circle cx="403" cy="388" r="4.5" fill="#c28a47"/>
+  <text x="421" y="395" class="item">验收结果</text>
+
+  <rect x="672" y="178" width="270" height="240" rx="14" fill="#ffffff" filter="url(#shadow)"/>
+  <rect x="672" y="178" width="270" height="8" rx="4" fill="#6f7da8"/>
+  <text x="706" y="232" class="card-title">大模型应用能力</text>
+  <text x="706" y="266" class="card-note">面向业务系统落地</text>
+  <circle cx="710" cy="312" r="4.5" fill="#6f7da8"/>
+  <text x="728" y="319" class="item">RAG / Agent</text>
+  <circle cx="710" cy="350" r="4.5" fill="#6f7da8"/>
+  <text x="728" y="357" class="item">评估和问题排查</text>
+  <circle cx="710" cy="388" r="4.5" fill="#6f7da8"/>
+  <text x="728" y="395" class="item">工程化接入</text>
+
+  <line x1="193" y1="426" x2="407" y2="492" stroke="#62727a" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)" opacity="0.72"/>
+  <line x1="500" y1="426" x2="500" y2="480" stroke="#62727a" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)" opacity="0.72"/>
+  <line x1="807" y1="426" x2="593" y2="492" stroke="#62727a" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)" opacity="0.72"/>
+
+  <rect x="350" y="484" width="300" height="76" rx="16" fill="#25343b" filter="url(#shadow)"/>
+  <text x="390" y="520" class="center-title">大模型应用落地</text>
+  <text x="372" y="548" class="center-note">把大模型能力接入真实后端系统</text>
+</svg>
